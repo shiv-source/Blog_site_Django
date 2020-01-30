@@ -1,0 +1,20 @@
+User and admin stuff
+-----------------------------
+All CRUD operations should be done by user 
+
+Navbar (base.html <Parent template>)
+
+user account < Login , logout ,signup , #password reset ,>
+user profile page
+
+Home page
+
+Blog post pannel page (for individual user).
+
+
+User
+----------
+post [text]
+Image
+link
+video
