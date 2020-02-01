@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  {% block title %}
+    Blog-Home
+  {% endblock title %}
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .nav {
+      margin-left: 59%;
+      color: red;
+
+    }
+
+    .active a {
+      color: white;
+
+
+      /* }
+    .navbar-inverse .navbar-brand {
+    /* color: #9d9d9d; */
+
+    }
+
+    body {
+       background-image: url("{% static '../../static/img/img2.jpg' %}");
+       background-repeat: no-repeat;
+       background-size: cover;
+       
+      
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">BLOG SITE</a>
+      </div>
+      <ul class="nav navbar-nav">
+
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="{% url 'hello' %}">About</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">SignUp</a></li>
+      </ul>
+      
+    </div>
+    
+  </nav>
+<div>
+  
+  </div>
+{% block content %}
+<h1 style="color: aqua; "><center>Publish your passions, your way</center></h1>
+ <h3 style="color: aqua; "><center>Create a unique and beautiful blog. It’s easy and free.</center></h3>
+  <div class="w3-container">
+    
+<center><input type="button" class="w3-button w3-black" value="Create Your Blog"></center>
+{% endblock %}
+</div>
+
+
+</body>
+
+</html>
